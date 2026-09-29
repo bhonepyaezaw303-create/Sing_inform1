@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - JobFinder</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <style>
+    
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-image: url('https://i.pinimg.com/1200x/7c/e2/ac/7ce2ac0ac47eb62f7c8b515ca35fe394.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: rgba(44, 62, 80, 0.95);
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      color: white;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      margin-left: 10px;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ddd;
+      background-color: rgba(128, 128, 128, 0.433);
+    }
+
+    
+    .main-section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 20px;
+    }
+
+   
+    .login-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      padding: 40px 35px;
+      width: 100%;
+      max-width: 380px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+    }
+
+    .login-card h3 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .form-control {
+      border-radius: 8px;
+      padding: 10px 12px;
+    }
+
+    .btn-login {
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px;
+      font-weight: 500;
+      width: 100%;
+      margin-top: 10px;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .btn-login:hover {
+      background-color: #1a252f;
+      color: #fff;
+    }
+
+    .extra-links {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .extra-links a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+
+   
+    .social-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      margin: 5px;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+      color: #555;
+      text-align: center;
+    }
+
+    .social-icons a:hover {
+      color: white;
+      background: wheat;
+      border-color: ivory;
+    }
+
+    
+    footer {
+      background-color: rgba(44, 62, 80, 0.95);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-briefcase"></i> JobFinder
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link rounded-2" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link rounded-2" href="#">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link rounded-2" href="#">Sign In</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link rounded-2" href="#">Apply Job</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+<!-- End of Nav -->
+
+  <!-- Main Section -->
+  <main class="main-section">
+
+    <div class="login-card">
+
+      <h3 class="title">Welcome Back</h3>
+
+      <form>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email"
+                 class="form-control"
+                 id="email"
+                 placeholder="name@example.com"
+                 required>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password"
+                 class="form-control"
+                 id="password"
+                 placeholder="Enter your password"
+                 required>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox"
+                 class="form-check-input"
+                 id="remember">
+
+          <label class="form-check-label" for="remember">
+            Save The Password
+          </label>
+        </div>
+
+        <button type="submit" class="btn-login">
+          Sign In
+        </button>
+
+      </form>
+
+      <div class="extra-links">
+        <a href="#">Forgot password?</a>
+        &nbsp;|&nbsp;
+        <a href="#">Create account</a>
+      </div>
+
+
+      <!-- Social Media -->
+      <div class="social-icons">
+
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://www.snapchat.com/">
+          <i class="fab fa-snapchat"></i>
+        </a>
+
+        <a href="https://web.telegram.org/a/">
+          <i class="fab fa-telegram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/en/">
+          <i class="fab fa-tiktok"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+<!-- End of sign_in card -->
+
+  <!-- Footer -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-title">
+        JobFinder
+      </div>
+
+      <div class="mb-2">
+        <a href="#">Find Jobs</a> &bull;
+        <a href="#">Career Advice</a> &bull;
+        <a href="#">Privacy Policy</a> &bull;
+        <a href="#">Terms of Service</a> &bull;
+        <a href="#">Contact Support</a>
+      </div>
+
+      <div>
+        &copy; 2026 JobFinder. All rights reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
